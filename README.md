@@ -3,8 +3,8 @@ Program utilizing deterministic finite automata to recognize numeric literals ac
 
 ## Contributors 
 ### Group - Smurf Kat
-Brenden Johnson - BVOLT
-Kevin Wenas -
+Brenden Johnson - BVOLT <br>
+Kevin Wenas - <br>
 Colin Mcgough - 
 
 ## Task Division
