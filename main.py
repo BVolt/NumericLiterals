@@ -17,7 +17,7 @@ def main():
     elif(hexAccepts):
         print("Hexadecimal Integer Accepted")
     else:
-        print("Rejected. Not an Integer Literal.")
+        print("Rejected.")
     
 
 if __name__ == "__main__":
