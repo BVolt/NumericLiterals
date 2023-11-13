@@ -9,11 +9,11 @@ class DecIntDFA:
 
     def __init__(self):
         self.transition = { # transition function for all states
-            "q1": lambda c: "q2" if c in self.nonZeroDigit else("q3" if c=="0" else "q6"), 
-            "q2": lambda c: "q2" if c in self.digit else("q4" if c=="_" else "q6"),
-            "q3": lambda c: "q3" if c == "0" else ("q5" if c=="_" else "q6"),
-            "q4": lambda c: "q2" if c in self.digit else "q6",
-            "q5": lambda c: "q3" if c == "0" else "q6",
+            "q1": lambda c: "q2" if c in self.nonZeroDigit else("q4" if c=="0" else "q6"), 
+            "q2": lambda c: "q2" if c in self.digit else("q3" if c=="_" else "q6"),
+            "q3": lambda c: "q2" if c in self.digit else "q6",
+            "q4": lambda c: "q4" if c == "0" else ("q5" if c=="_" else "q6"),
+            "q5": lambda c: "q4" if c == "0" else "q6",
             "q6": lambda c: "q6"
         }
     
